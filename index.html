@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome close  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Swiper</title>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <div class="gravero">
+            <div class="left">
+              <p id="year">2021</p>
+              <h1>GRAVERO</h1>
+              <img src="img/Ellipse 4.png" alt="" />
+              <div class="socials">
+                <a href=""><i class="fab fa-soundcloud"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-spotify"></i></a>
+              </div>
+            </div>
+            <div class="right">
+              <div class="up">
+                <div class="up-first">
+                  <img src="img/image 68.png" alt="" />
+                  <img src="img/Untitled-1 1.png" alt="" />
+                </div>
+                <div class="up-second">
+                  <img src="img/pngfind 1.png" alt="" />
+                  <img id="img-last" src="img/fm radio.png" alt="" />
+                </div>
+              </div>
+              <div class="down">
+                <h2>PLATFORM</h2>
+                <h1>INSTAGRAM - 18.2k</h1>
+                <h1>YOUTUBE - 120k</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="abhinav">
+            <div class="left">
+              <p id="year">2021</p>
+              <h1>ABHI9AV</h1>
+              <img src="img/Ellipse 2.png" alt="" />
+              <div class="socials">
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="right" >
+              <div class="up">
+                <div class="up-first">
+                  <img src="img/image 68.png" alt="" />
+                  <img src="img/image 40.png" alt="" />
+                </div>
+                <div class="up-second">
+                  <img src="img/image 39.png" alt="" />
+                </div>
+              </div>
+              <div class="down">
+                <h2>PLATFORM</h2>
+                <h1>INSTAGRAM - 4.9k</h1>
+                <h1>YOUTUBE - 27.1k</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide3">
+          <div class="routh">
+            <div class="left">
+              <p id="year">2021</p>
+              <h1>ABHINAV ROUTH</h1>
+              <img src="img/Ellipse 5.png" alt="" />
+              <div class="socials">
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="right">
+              <div class="up">
+                <div class="up-first">
+                  <img id="first-img" src="img/image 68.png" alt="" />
+                  <img id="second-img" src="img/image 70.png" alt="" />
+                </div>
+                <div class="up-second">
+                  <img id="second-last" src="img/image 42.png" alt="" />
+                  <img id="last" src="img/image 63.png" alt="" />
+                </div>
+              </div>
+              <div class="down">
+                <h2>PLATFORM</h2>
+                <h1>INSTAGRAM - 983</h1>
+                <h1>YOUTUBE - 3.93k</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: false,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+
+    <!-- gsap script  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

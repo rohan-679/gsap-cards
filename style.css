@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
+
+@font-face {
+  font-family: dharma;
+  src: url("./fonts/Mortend\ -\ Bold.otf");
+}
+@font-face {
+  font-family: dharma2;
+  src: url("./fonts/DharmaGothicE_Bold_R.otf");
+}
+@font-face {
+  font-family: Mortend - Light;
+  src: url("./fonts/Mortend\ -\ Light.ttf");
+}
+@font-face {
+  font-family: Akira;
+  src: url("./fonts/Akira\ Expanded\ Demo.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+html,
+body {
+  /* background: black; */
+  background-color: #000000;
+  color: #f0f0f0;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* *************************************************GRAVERO************************************* */
+.gravero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gravero .left {
+  width: 30vw;
+  /* height: 100%; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#year {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  color: #141414;
+  font-family: "dharma2", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.gravero .left h1 {
+  font-size: 54px;
+  color: #141414;
+  font-family: "dharma", sans-serif;
+}
+.gravero .left img {
+  transition: 0.3s ease;
+}
+.gravero .left img:hover {
+  transform: scale(1.06);
+}
+.gravero .left .socials {
+  margin-top: 30px;
+}
+.gravero .left .socials a i {
+  color: #141414;
+  font-size: 34px;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+.gravero .left .socials a i:hover {
+  transform: scale(1.2);
+}
+.gravero .left .socials .fa-spotify {
+  font-size: 30px;
+}
+.gravero .right {
+  width: 70vw;
+  /* height: 100%; */
+  background-color: #141414;
+}
+.gravero .right .up {
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.8) url("img/N1I6IgDOGJs.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.up-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#img-last {
+  margin-right: 50px;
+}
+.up-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gravero .right .down {
+  height: 50vh;
+  background-color: #000000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.down h2 {
+  font-family: "dharma", sans-serif;
+  letter-spacing: 3px;
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.down h1 {
+  font-family: "dharma", sans-serif;
+  font-size: 54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.swiper-button-prev {
+  color: #ffffff !important;
+  background: #000000;
+  padding: 30px;
+}
+.swiper-button-next {
+  color: #000000 !important;
+  background: #ffffff;
+  padding: 30px;
+}
+@media screen and (max-width: 1500px) {
+  .swiper-button-prev {
+    position: absolute;
+    top: 90%;
+  }
+  .swiper-button-next {
+    position: absolute;
+    top: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev {
+    position: absolute;
+    top: 30%;
+  }
+  .swiper-button-next {
+    position: absolute;
+    top: 30%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gravero .left {
+    width: 100vw;
+  }
+  .gravero .right {
+    width: 100vw;
+  }
+  .gravero .right .up {
+    height: 30vh;
+  }
+  .gravero .right .down {
+    height: 37vh;
+  }
+  .gravero .left h1 {
+    margin-top: 50px;
+    font-size: 54px;
+  }
+  #img-last {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gravero .left h1 {
+    margin-top: 50px;
+    font-size: 34px;
+  }
+  .gravero .left img {
+    width: 70%;
+  }
+  .gravero .right .up {
+    height: 90vh;
+  }
+  .gravero .right .down {
+    height: 35vh;
+  }
+  .gravero .down h1 {
+    font-size: 25px;
+  }
+  #img-last {
+    margin-right: 0px !important;
+  }
+  .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #000000;
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+    background: none;
+    color: #000000 !important;
+}
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+    background: none;
+    color: #000000 !important;
+}
+}
+/* *************************************************GRAVERO ENDS HERE************************************* */
+
+/* *************************************************ABHINAV STARTS HERE************************************* */
+.abhinav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.abhinav .left {
+  width: 30vw;
+  /* height: 100%; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#year {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  color: #141414;
+  font-family: "dharma2", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.abhinav .left h1 {
+  font-size: 54px;
+  color: #141414;
+  font-family: "dharma", sans-serif;
+}
+.abhinav .left img {
+  transition: 0.3s ease;
+}
+.abhinav .left img:hover {
+  transform: scale(1.06);
+}
+.abhinav .left .socials {
+  margin-top: 30px;
+}
+.abhinav .left .socials a i {
+  color: #141414;
+  font-size: 34px;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+.abhinav .left .socials a i:hover {
+  transform: scale(1.2);
+}
+.abhinav .left .socials .fa-spotify {
+  font-size: 30px;
+}
+.abhinav .right {
+  width: 70vw;
+  /* height: 100%; */
+  background-color: #000000;
+}
+.abhinav .right .up {
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.8) url("img/Rectangle\ 65.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.up-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.up-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.abhinav .right .down {
+  height: 50vh;
+  background-color: #000000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.down h2 {
+  font-family: "dharma", sans-serif;
+  letter-spacing: 3px;
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.down h1 {
+  font-family: "dharma", sans-serif;
+  font-size: 54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .abhinav .left {
+    width: 100vw;
+  }
+  .abhinav .right {
+    width: 100vw;
+  }
+  .abhinav .right .up {
+    height: 30vh;
+  }
+  .abhinav .right .down {
+    height: 37vh;
+  }
+  .abhinav .left h1 {
+    margin-top: 50px;
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .abhinav .left h1 {
+    margin-top: 50px;
+    font-size: 34px;
+  }
+  .abhinav .left img {
+    width: 70%;
+  }
+  .abhinav .right .up {
+    height: 90vh;
+  }
+  .abhinav .right .down {
+    height: 35vh;
+  }
+  .abhinav .down h1 {
+    font-size: 25px;
+  }
+  #img-last {
+    margin-right: 0px !important;
+  }
+  .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #000000;
+}
+}
+/* *************************************************ABHINAV ENDS HERE************************************* */
+
+/* *************************************************ROUTH STARTS HERE************************************* */
+.routh {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.routh .left {
+  width: 30vw;
+  /* height: 100%; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#year {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  color: #141414;
+  font-family: "dharma2", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.routh .left h1 {
+  text-align: center;
+  font-size: 54px;
+  color: #141414;
+  font-family: "dharma", sans-serif;
+}
+.routh .left img {
+  transition: 0.3s ease;
+}
+.routh .left img:hover {
+  transform: scale(1.06);
+}
+.routh .left .socials {
+  margin-top: 30px;
+}
+.routh .left .socials a i {
+  color: #141414;
+  font-size: 34px;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+.routh .left .socials a i:hover {
+  transform: scale(1.2);
+}
+.routh .left .socials .fa-spotify {
+  font-size: 30px;
+}
+.routh .right {
+  width: 70vw;
+  /* height: 100%; */
+  background-color: #141414;
+}
+.routh .right .up {
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.8) url("img/routh\ bg.png");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.up-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#img-last {
+  margin-right: 50px;
+}
+.up-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.routh .right .down {
+  height: 50vh;
+  background-color: #000000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.down h2 {
+  font-family: "dharma", sans-serif;
+  letter-spacing: 3px;
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.down h1 {
+  font-family: "dharma", sans-serif;
+  font-size: 54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .routh .left {
+    width: 100vw;
+  }
+  .routh .right {
+    width: 100vw;
+  }
+  .routh .right .up {
+    height: 30vh;
+  }
+  .routh .right .down {
+    height: 37vh;
+  }
+  .routh .left h1 {
+    margin-top: 50px;
+    font-size: 54px;
+  }
+}
+/* @media screen and (max-width: 480px) {
+  .routh .left h1 {
+    margin-top: 50px;
+    font-size: 34px;
+  }
+  .routh .left img {
+    width: 70%;
+  }
+  .down h2 {
+    margin-bottom: 10px;
+  }
+  .down h1 {
+    font-size: 28px;
+  }
+} */
+@media screen and (max-width: 480px) {
+  .routh .left h1 {
+    margin-top: 50px;
+    font-size: 34px;
+  }
+  .routh .left img {
+    width: 70%;
+  }
+  .routh .right .up {
+    height: 90vh;
+    padding: 1rem;
+  }
+  .routh .right .down {
+    height: 35vh;
+  }
+  .routh .down h1 {
+    font-size: 25px;
+  }
+  #img-last {
+    margin-right: 0px !important;
+  }
+  .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #000000;
+}
+}
+/* *************************************************ROUTH ENDS HERE************************************* */
